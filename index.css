@@ -104,10 +104,13 @@ span.roaming {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: opacity .75s ease;
+    opacity: 0;
+    transition: all .75s ease;
     padding: 0 10px;
     overflow: auto;
     animation: animateBottom 1s;
+    animation-delay: 0.5s;
+/*    animation-fill-mode: forwards;*/
 }
 
 @keyframes animateBottom {

@@ -21,15 +21,15 @@ function change() {
      if (changed){
         body.style.background = "#7756eb";
         artist1.style.opacity = "0";
-        roaming.style.opacity = "1";
         setTimeout(function() {artist1.style.display = "none";}, 750);
+        setTimeout(function() {roaming.style.opacity = "1";}, 250);
         changed = false;
     } else {
 //        body.style.background = "#605f62";
         body.style.background = "#5f528d";
         roaming.style.opacity = "0";
-        artist1.style.opacity = "1";
         artist1.style.display = "block";
+        setTimeout(function() {artist1.style.opacity = "1"}, 500);
         changed = true;
     }
  
