@@ -12,10 +12,11 @@ html {
 
 body {
     width: 100%;
-    height: 100%;
+    height: 604px;
     background: #7756eb;
 /*    background: #948bb3;*/
     transition: background 1.35s ease;
+    background-size: 1px 604px;
 }
 
 #roaming {
@@ -132,6 +133,7 @@ span.roaming {
 #artist1 div.byline img {
     position: relative;
     float: left;
+    margin-left: 18px;
 }
 
 #artist1 div.byline__text {
@@ -141,7 +143,7 @@ span.roaming {
     justify-content: center;
     align-items: flex-start;
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 20px;
 }
 
