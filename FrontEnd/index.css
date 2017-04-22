@@ -13,7 +13,9 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background: #605f62;
+    background: #948bb3;
+/*    background: #605f62;*/
+    transition: background 1.35s ease;
 }
 
 #roaming {
@@ -26,6 +28,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    transition: opacity .75s ease;
 }
 
 .animation {
@@ -87,8 +90,71 @@ body {
     }
 }
 
-span.oblique {
-    color: #d4caeb;
+span.roaming {
+/*    color: #ebe6ff;*/
+    color: white;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 32px;
+}
+
+#artist1 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .75s ease;
+    padding: 0 10px;
+    overflow: auto;
+}
+
+#artist1 h1 {
+    font-size: 50px;
+    font-weight: 600;
+    font-style: oblique;
+    color: white;
+    text-align: center;
+}
+
+#artist1 span.artist {
+    color: white;
+    font-size: 26px;
+    padding-left: 18px;
+}
+
+#artist1 div.byline {
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+}
+
+#artist1 div.byline img {
+    position: relative;
+    float: left;
+}
+
+#artist1 div.byline__text {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+#artist1 div.byline div.byline__text div {
+    margin: 8px 0;
+    font-style: oblique;
+    font-weight: 300;
+}
+
+#artist1 .description {
+    clear: both;
+    color: white;
+    text-indent: 35px;
+    font-weight: 300;
+    font-size: 26px;
 }
