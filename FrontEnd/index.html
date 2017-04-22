@@ -3,18 +3,37 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet" type="text/css">
-    <link href="circleAnimation.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
 </head>
     
-<body>
-    <div id="searching">
+<body onclick="change()">
+    <div id="roaming">
         <div class="animation">
-            <div cass="animation__bubble1">
+            <div class="animation__bubble1">
             </div>
             <div class="animation__bubble2">
             </div>
         </div>
+        <span class="roaming">Approach an exhibit</span>
     </div>
     
+    <div id="artist1">
+        <h1>The Starry Night</h1>
+        <span class="artist">by Vincent Van Gogh</span>
+        <div class="byline">
+            <img src="vangogh.jpg">
+            <div class="byline__text">
+                <div>Country of Origin: France</div>
+                <div>Date Published: 1889</div>
+                <div>Medium: Oil on Canvas</div>
+            </div>
+        </div>
+        <div class="description">
+            <em>The Starry Night</em> depicts the view from the east-facing window of artist Van Gogh’s asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an idealized village. It has been in the permanent collection of the Museum of Modern Art in New York City since 1941, acquired through the Lillie P. Bliss Bequest. It is regarded as among Van Gogh's finest works, and is one of the most recognized paintings in the history of Western culture.
+        </div>
+    </div>
+    
+    <script src="change.js"></script>
 </body>
 </html>
