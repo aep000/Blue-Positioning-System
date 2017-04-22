@@ -1,0 +1,7 @@
+.animation {
+    display: block;
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    background: black;
+}
