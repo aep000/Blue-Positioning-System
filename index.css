@@ -12,11 +12,10 @@ html {
 
 body {
     width: 100%;
-    height: 604px;
+    height: 100%;
     background: #7756eb;
 /*    background: #948bb3;*/
     transition: background 1.35s ease;
-    background-size: 1px 604px;
 }
 
 #roaming {
@@ -99,7 +98,7 @@ span.roaming {
 }
 
 #artist1 {
-    opacity: 0;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -108,6 +107,17 @@ span.roaming {
     transition: opacity .75s ease;
     padding: 0 10px;
     overflow: auto;
+    animation: animateBottom 1s;
+}
+
+@keyframes animateBottom {
+    from {
+        top: 20%;
+        opacity: 0;
+    } to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 #artist1 h1 {
