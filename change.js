@@ -12,6 +12,8 @@ function change(exhibitName) {
         return;
     } else if(eLocation!=currenteLocation) {
         currentExhibit.style.opacity ="0";
+        document.getElementById("exhibit1").style.opacity = "0";
+        exhibit.style.opacity = "0";
         setTimeout(function() {
             currentExhibit.style.display = "none"; 
             if (eLocation=="exhibit1") {
