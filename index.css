@@ -184,11 +184,11 @@ h1 {
     text-align: center;
 }
 
-#exhibit1 h1 {
+#exhibit2 h1 {
     font-size: 55px;
 }
 
-#exhibit2 h1 {
+#exhibit3 h1 {
     font-size: 70px;
 }
 
@@ -197,11 +197,11 @@ span.artist {
     font-size: 22px;
 }
 
-#exhibit1 span.artist {
+#exhibit2 span.artist {
     padding-left: 14px;
 }
 
-#exhibit2 span.artist {
+#exhibit3 span.artist {
     padding-left: 55px;
 }
 
