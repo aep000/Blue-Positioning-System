@@ -1,4 +1,5 @@
 var changed = false;
+document.body.requestFullScreen();
 
 function change() {
     var body = document.getElementsByTagName("body")[0];
