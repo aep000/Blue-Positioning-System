@@ -139,7 +139,7 @@ h2 {
     display: inline-block;
 }
 
-p {
+.bullet p {
     font-size: 25px;
     color: white;
     position: relative;
@@ -150,6 +150,10 @@ p {
     color: white;
     float: left;
     margin: 0 10px;
+}
+
+.fa-map-marker {
+    margin: 0 20px;
 }
 
 #exhibit1, #exhibit2, #exhibit3 {
@@ -235,8 +239,14 @@ div.byline__text {
 
 div.byline__text div {
     margin: 8px 0;
-    font-style: oblique;
-    font-weight: 300;
+/*    font-style: oblique;*/
+    font-weight: 400;
+    font-size: 24px;
+}
+
+div.byline__text div p {
+    display: inline;
+    line-height: 48px;
 }
 
 .description {
