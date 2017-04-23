@@ -19,7 +19,7 @@ function change(exhibitName) {
             } else {
                 exhibit.style.display = "block";
             }
-            currentExhibit.style.opacity = "1";
+//            currentExhibit.style.opacity = "1";
         }, 750);
         currenteLocation = eLocation;
     }

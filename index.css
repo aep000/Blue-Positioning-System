@@ -164,7 +164,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 1;
+    opacity: 0;
     transition: all .75s ease;
     padding: 0 10px;
     overflow: auto;
