@@ -12,7 +12,15 @@ function change(exhibitName) {
         return;
     } else if(location!=currentLocation) {
         currentExhibit.style.opacity ="0";
-        setTimeout(function() {currentExhibit.style.display = "none"; exhibit.style.display = "block"; currentExhibit.style.opacity = "1";}, 750);
+        setTimeout(function() {
+            currentExhibit.style.display = "none"; 
+            if (location=="exhibit1") {
+                exhibit.style.display = "flex";
+            } else {
+                exhibit.style.display = "block";
+            }
+            currentExhibit.style.opacity = "1";
+        }, 750);
         currentLocation = location;
     }
 }
