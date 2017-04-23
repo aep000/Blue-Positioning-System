@@ -1,18 +1,6 @@
 var location = "exhibit1";
 var currentLocation = "exhibit1";
 
-function locationRequest() {
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        location = this.responseText;
-        }
-    };
-    request.open("GET", "predict/", true);
-    request.send();
-    change(location);
-}
-
 function change(exhibitName) {
     var body = document.getElementsByTagName("body")[0];
     var roaming = document.getElementById("roaming");
@@ -27,9 +15,21 @@ function change(exhibitName) {
         setTimeout(function() {currentExhibit.style.display = "none"; exhibit.style.display = "block"; currentExhibit.style.opacity = "1";}, 750);
         currentLocation = location;
     }
+}
     
-    
-    
+    function locationRequest() {
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        location = this.responseText;
+        }
+    };
+    request.open("GET", "predict/", true);
+    request.send();
+    change(location);
+}
+
+setInterval(locationRequest, 500);
      /*if (exhibitNumber==0){
         body.style.background = "#7756eb";
         exhibit.style.opacity = "0";
@@ -46,5 +46,4 @@ function change(exhibitName) {
         changed = true;
         console.log(exhibitName);
     }*/
- 
-}
+
