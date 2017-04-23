@@ -19,6 +19,7 @@ body {
 }
 
 #roaming {
+    display: none;
     position: relative;
     width: 100%;
     height: 50%;
@@ -139,7 +140,7 @@ h2 {
     display: inline-block;
 }
 
-p {
+.bullet p {
     font-size: 25px;
     color: white;
     position: relative;
@@ -150,6 +151,10 @@ p {
     color: white;
     float: left;
     margin: 0 10px;
+}
+
+.fa-map-marker {
+    margin: 0 20px;
 }
 
 #exhibit1, #exhibit2, #exhibit3 {
@@ -165,6 +170,10 @@ p {
     overflow: auto;
     animation: animateBottomExhibit 1s;
     animation-delay: 0.5s;
+}
+
+#exhibit1 {
+    display: flex;
 }
 
 @keyframes animateBottomExhibit {
@@ -184,11 +193,11 @@ h1 {
     text-align: center;
 }
 
-#exhibit1 h1 {
+#exhibit2 h1 {
     font-size: 55px;
 }
 
-#exhibit2 h1 {
+#exhibit3 h1 {
     font-size: 70px;
 }
 
@@ -197,24 +206,25 @@ span.artist {
     font-size: 22px;
 }
 
-#exhibit1 span.artist {
+#exhibit2 span.artist {
     padding-left: 14px;
 }
 
-#exhibit2 span.artist {
+#exhibit3 span.artist {
     padding-left: 55px;
 }
 
 div.byline {
     width: 100%;
     height: 200px;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 div.byline img {
     position: relative;
     float: left;
     margin-left: 18px;
+    border-radius: 7px;
 }
 
 #exhibit1 div.byline img {
@@ -225,7 +235,7 @@ div.byline__text {
     height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     color: white;
     font-size: 20px;
@@ -234,11 +244,18 @@ div.byline__text {
 
 div.byline__text div {
     margin: 8px 0;
-    font-style: oblique;
-    font-weight: 300;
+/*    font-style: oblique;*/
+    font-weight: 400;
+    font-size: 24px;
+}
+
+div.byline__text div p {
+    display: inline;
+    line-height: 48px;
 }
 
 .description {
+    margin-top: 25px;
     clear: both;
     color: white;
     text-indent: 35px;
