@@ -29,6 +29,17 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: opacity .75s ease;
+    animation: animateBottomRoaming 1s;
+}
+
+@keyframes animateBottomRoaming {
+    from {
+        top: 70%;
+        opacity: 0;
+    } to {
+        top: 50%;
+        opacity: 1;
+    }
 }
 
 .animation {
@@ -108,12 +119,11 @@ span.roaming {
     transition: all .75s ease;
     padding: 0 10px;
     overflow: auto;
-    animation: animateBottom 1s;
+    animation: animateBottomArtist 1s;
     animation-delay: 0.5s;
-/*    animation-fill-mode: forwards;*/
 }
 
-@keyframes animateBottom {
+@keyframes animateBottomArtist {
     from {
         top: 20%;
         opacity: 0;
