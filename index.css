@@ -109,6 +109,49 @@ span.roaming {
     font-size: 32px;
 }
 
+.exhibit1__container {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h3, h2 {
+    text-align: center;
+    color:white;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 70px;
+    line-height: 0.7;
+}
+
+.bullet {
+    display: inline-block;
+}
+
+p {
+    font-size: 26px;
+    color: white;
+    position: relative;
+}
+
+.fa {
+    font-size: 30px;
+    color: white;
+    float: left;
+    margin: 0 10px;
+}
+
 #exhibit1, #exhibit2, #exhibit3 {
     display: none;
     position: absolute;
@@ -120,11 +163,11 @@ span.roaming {
     transition: all .75s ease;
     padding: 0 10px;
     overflow: auto;
-    animation: animateBottomArtist 1s;
+    animation: animateBottomExhibit 1s;
     animation-delay: 0.5s;
 }
 
-@keyframes animateBottomArtist {
+@keyframes animateBottomExhibit {
     from {
         top: 20%;
         opacity: 0;
