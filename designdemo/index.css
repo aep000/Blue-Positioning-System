@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #7756eb;
+/*    background: #948bb3;*/
+    transition: background 1.35s ease;
+}
+
+#roaming {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity .75s ease;
+    animation: animateBottomRoaming 1s;
+}
+
+@keyframes animateBottomRoaming {
+    from {
+        top: 70%;
+        opacity: 0;
+    } to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+.animation {
+    position: relative;
+    width: 50%;
+    padding-top: 50%;
+/*    background: rgba(0,0,0,0.5);*/
+}
+
+.animation__bubble1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+/*    background: #6f678b;*/
+    background: #6646d6;
+    border-radius: 50%;
+    animation: bubble1 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+@keyframes bubble1 {
+    0% {
+        transform: scale(0,0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5,1.5);
+        opacity: 0;
+    }
+}
+
+.animation__bubble2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9280d6;
+    border-radius: 50%;
+    animation: bubble2 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+@keyframes bubble2 {
+    0% {
+        transform: scale(0,0);
+        opacity: 1;
+    }
+    30% {
+        transform: scale(0,0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1,1);
+        opacity: 0;
+    }
+}
+
+span.roaming {
+/*    color: #ebe6ff;*/
+    color: white;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.exhibit1__container {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h3, h2 {
+    text-align: center;
+    color:white;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 75px;
+    line-height: 0.7;
+}
+
+.bullet {
+    display: inline-block;
+}
+
+.bullet p {
+    font-size: 25px;
+    color: white;
+    position: relative;
+}
+
+.fa {
+    font-size: 30px;
+    color: white;
+    float: left;
+    margin: 0 10px;
+}
+
+.fa-map-marker {
+    margin: 0 20px;
+}
+
+#exhibit1, #exhibit2, #exhibit3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .75s ease;
+    padding: 0 10px;
+    overflow: auto;
+    animation: animateBottomExhibit 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#exhibit1 {
+    display: flex;
+    opacity: 0;
+}
+
+@keyframes animateBottomExhibit {
+    from {
+        top: 20%;
+        opacity: 0;
+    } to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-weight: 300;
+    font-style: oblique;
+    color: white;
+    text-align: center;
+}
+
+#exhibit2 h1 {
+    font-size: 55px;
+}
+
+#exhibit3 h1 {
+    font-size: 70px;
+}
+
+span.artist {
+    color: white;
+    font-size: 22px;
+}
+
+#exhibit2 span.artist {
+    padding-left: 14px;
+}
+
+#exhibit3 span.artist {
+    padding-left: 55px;
+}
+
+div.byline {
+    width: 100%;
+    height: 200px;
+    margin: 25px 0;
+}
+
+div.byline img {
+    position: relative;
+    float: left;
+    margin-left: 18px;
+    border-radius: 7px;
+}
+
+#exhibit1 div.byline img {
+    margin-left: 18px; /* Should be the same distance as the padding-left value of the span.artist for the specifc exhibit */
+}
+
+div.byline__text {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+div.byline__text div {
+    margin: 8px 0;
+/*    font-style: oblique;*/
+    font-weight: 400;
+    font-size: 24px;
+}
+
+div.byline__text div p {
+    display: inline;
+    line-height: 48px;
+}
+
+.description {
+    margin-top: 25px;
+    clear: both;
+    color: white;
+    text-indent: 35px;
+    font-weight: 300;
+    font-size: 26px;
+    text-align: justify;
+}
