@@ -134,33 +134,51 @@ span.roaming {
     }
 }
 
-#exhibit1 h1 {
-    font-size: 50px;
-    font-weight: 600;
+h1 {
+    font-weight: 300;
     font-style: oblique;
     color: white;
     text-align: center;
 }
 
-#exhibit1 span.artist {
-    color: white;
-    font-size: 26px;
-    padding-left: 18px;
+#exhibit1 h1 {
+    font-size: 55px;
 }
 
-#exhibit1 div.byline {
+#exhibit2 h1 {
+    font-size: 70px;
+}
+
+span.artist {
+    color: white;
+    font-size: 22px;
+}
+
+#exhibit1 span.artist {
+    padding-left: 14px;
+}
+
+#exhibit2 span.artist {
+    padding-left: 55px;
+}
+
+div.byline {
     width: 100%;
     height: 200px;
     margin: 20px 0;
 }
 
-#exhibit1 div.byline img {
+div.byline img {
     position: relative;
     float: left;
     margin-left: 18px;
 }
 
-#exhibit1 div.byline__text {
+#exhibit1 div.byline img {
+    margin-left: 18px; /* Should be the same distance as the padding-left value of the span.artist for the specifc exhibit */
+}
+
+div.byline__text {
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -171,13 +189,13 @@ span.roaming {
     padding-left: 20px;
 }
 
-#exhibit1 div.byline div.byline__text div {
+div.byline__text div {
     margin: 8px 0;
     font-style: oblique;
     font-weight: 300;
 }
 
-#exhibit1 .description {
+.description {
     clear: both;
     color: white;
     text-indent: 35px;
